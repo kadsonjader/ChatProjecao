@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="contentDescription"
+    tools:context="com.example.kadson.chatprojecao.ActivityValidador">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:src="@drawable/logo_escola"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="Validação"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="16dp"
+        android:text="você recebeu um SMS para validação do seu login, digite o código de validação abaixo:" />
+
+    <EditText
+        android:id="@+id/codigoId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_below="@+id/textView7"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Digite o codigo"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/botarValidarId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/codigoId"
+        android:layout_alignLeft="@+id/codigoId"
+        android:layout_alignRight="@+id/codigoId"
+        android:layout_alignStart="@+id/codigoId"
+        android:layout_below="@+id/codigoId"
+        android:layout_marginTop="54dp"
+        android:text="Validar" />
+</RelativeLayout>

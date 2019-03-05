@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "2644269856",
+    "firebase_url": "https://chatprojecao-1169a.firebaseio.com",
+    "project_id": "chatprojecao-1169a",
+    "storage_bucket": "chatprojecao-1169a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2644269856:android:0b7cd255ffe127ce",
+        "android_client_info": {
+          "package_name": "com.example.kadson.chatprojecao"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "2644269856-hivae7njp2tmaf7bauq2389l737ju10r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kadson.chatprojecao",
+            "certificate_hash": "df004dd375323f8a9059ea5ddedbd2e2e26ec500"
+          }
+        },
+        {
+          "client_id": "2644269856-22s87a5udm79ba0fv72oo0i86k60doda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfMm6Ckspp2FRuI5i6R6Xar4ub7vFBb7Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "2644269856-22s87a5udm79ba0fv72oo0i86k60doda.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

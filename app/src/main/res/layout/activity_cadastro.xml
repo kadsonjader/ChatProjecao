@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="contentDescription"
+    tools:context="com.example.kadson.chatprojecao.CadastroActivity">
+
+    <Button
+        android:id="@+id/botaoCadastrarId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/telefoneId"
+        android:layout_centerHorizontal="true"
+        android:text="Cadastrar" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_escola" />
+
+    <EditText
+        android:id="@+id/nomeId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="Nome "
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/matriculaId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nomeId"
+        android:layout_alignStart="@+id/nomeId"
+        android:layout_below="@+id/nomeId"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="Matricula"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/senhaId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/matriculaId"
+        android:layout_alignStart="@+id/matriculaId"
+        android:layout_alignLeft="@+id/matriculaId"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/confirmarSenhaId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/senhaId"
+        android:layout_alignStart="@+id/senhaId"
+        android:layout_alignLeft="@+id/senhaId"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="Confirmar Senha"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/cursoId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/confirmarSenhaId"
+        android:layout_alignStart="@+id/confirmarSenhaId"
+        android:layout_below="@+id/confirmarSenhaId"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Curso"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/telefoneId"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/cursoId"
+        android:layout_alignRight="@+id/cursoId"
+        android:layout_below="@+id/cursoId"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="Telefone"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/dddId"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/botaoCadastrarId"
+        android:layout_toLeftOf="@+id/telefoneId"
+        android:layout_toStartOf="@+id/telefoneId"
+        android:ems="10"
+        android:hint="DDD"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/cdPaisId"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dddId"
+        android:layout_alignBottom="@+id/dddId"
+        android:layout_alignLeft="@+id/cursoId"
+        android:layout_alignStart="@+id/cursoId"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="+55" />
+
+</RelativeLayout>
