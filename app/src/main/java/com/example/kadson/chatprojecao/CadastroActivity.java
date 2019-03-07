@@ -15,12 +15,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.kadson.chatprojecao.config.ConfiguracaoFirebase;
 import com.example.kadson.chatprojecao.helper.Permissao;
 import com.example.kadson.chatprojecao.helper.Preferencias;
 import com.example.kadson.chatprojecao.model.Usuario;
 import com.github.rtoshiro.util.format.SimpleMaskFormatter;
 import com.github.rtoshiro.util.format.text.MaskTextWatcher;
 import com.google.android.gms.common.SignInButton;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.HashMap;
 import java.util.Random;
@@ -36,6 +38,7 @@ public class CadastroActivity extends Activity {
     private EditText ddd;
     private EditText telefone;
     private Usuario usuario;
+    private FirebaseAuth autenticacao;
   private String[] permissoesNecessarias = new String[]{
               Manifest.permission.SEND_SMS,
                 Manifest.permission.INTERNET
@@ -92,6 +95,7 @@ public class CadastroActivity extends Activity {
                 usuario.setMatricula(matriculaUsuario);
                 usuario.setSenha(senhaUsuario);
                 usuario.setCurso(cursoUsuario);
+                cadastrarUsuario();
 
                 String telefoneSemFormatacao = telefoneCompleto.replace("+","");
                 telefoneSemFormatacao = telefoneSemFormatacao.replace("-","");
@@ -168,5 +172,11 @@ public class CadastroActivity extends Activity {
 
         AlertDialog dialog = builder.create();
         dialog.show();
+    }
+
+
+    public void cadastrarUsuario(){
+        autenticacao = ConfiguracaoFirebase.getFirebaseAutenticacao();
+
     }
 }
