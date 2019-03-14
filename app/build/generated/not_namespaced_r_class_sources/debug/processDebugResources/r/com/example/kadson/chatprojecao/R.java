@@ -3062,7 +3062,7 @@ public final class R {
     public static final int listMode=0x7f070056;
     public static final int list_item=0x7f070057;
     public static final int logarId=0x7f070058;
-    public static final int matriculaId=0x7f070059;
+    public static final int matriculaMainId=0x7f070059;
     public static final int media_actions=0x7f07005a;
     public static final int message=0x7f07005b;
     public static final int middle=0x7f07005c;
@@ -3099,7 +3099,7 @@ public final class R {
     public static final int search_src_text=0x7f07007b;
     public static final int search_voice_btn=0x7f07007c;
     public static final int select_dialog_listview=0x7f07007d;
-    public static final int senhaId=0x7f07007e;
+    public static final int senhaMainId=0x7f07007e;
     public static final int shortcut=0x7f07007f;
     public static final int showCustom=0x7f070080;
     public static final int showHome=0x7f070081;

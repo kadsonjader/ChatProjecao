@@ -7,7 +7,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.provider.Telephony;
 import android.telephony.SmsManager;
 import android.util.Log;
 import android.view.View;
@@ -19,10 +18,11 @@ import com.example.kadson.chatprojecao.config.ConfiguracaoFirebase;
 import com.example.kadson.chatprojecao.helper.Permissao;
 import com.example.kadson.chatprojecao.helper.Preferencias;
 import com.example.kadson.chatprojecao.model.Usuario;
+import com.example.kadson.chatprojecao.ActivityValidador;
 import com.github.rtoshiro.util.format.SimpleMaskFormatter;
 import com.github.rtoshiro.util.format.text.MaskTextWatcher;
-import com.google.android.gms.common.SignInButton;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
 
 import java.util.HashMap;
 import java.util.Random;
@@ -38,6 +38,7 @@ public class CadastroActivity extends Activity {
     private EditText ddd;
     private EditText telefone;
     private Usuario usuario;
+    private DatabaseReference referenciaFirebase;
     private FirebaseAuth autenticacao;
   private String[] permissoesNecessarias = new String[]{
               Manifest.permission.SEND_SMS,
@@ -52,8 +53,8 @@ public class CadastroActivity extends Activity {
       Permissao.validaPermissoes(1,this,permissoesNecessarias);
 
         nome = findViewById(R.id.nomeId);
-        matricula = findViewById(R.id.matriculaId);
-        senha = findViewById(R.id.senhaId);
+        matricula = findViewById(R.id.matriculaMainId);
+        senha = findViewById(R.id.senhaMainId);
         confirmarSenha = findViewById(R.id.confirmarSenhaId);
         curso = findViewById(R.id.cursoId);
         cadastrar = findViewById(R.id.botaoCadastrarId);
@@ -95,7 +96,6 @@ public class CadastroActivity extends Activity {
                 usuario.setMatricula(matriculaUsuario);
                 usuario.setSenha(senhaUsuario);
                 usuario.setCurso(cursoUsuario);
-                cadastrarUsuario();
 
                 String telefoneSemFormatacao = telefoneCompleto.replace("+","");
                 telefoneSemFormatacao = telefoneSemFormatacao.replace("-","");
@@ -112,23 +112,23 @@ public class CadastroActivity extends Activity {
                 Preferencias preferencias = new Preferencias(CadastroActivity.this);
                 preferencias.salvarUsuarioPreferencias(nomeUsuario,matriculaUsuario,senhaUsuario,cursoUsuario,telefoneSemFormatacao,token);
 
-                /*
-                HashMap <String, String> usuario = preferencias.getDadosUsuario();
+
+                HashMap<String, String> usuario = preferencias.getDadosUsuario();
 
                 Log.i("TOKEN", "T: " + usuario.get("token"));
-                    */
+
 
                 //Envio do SMS
              // telefoneSemFormatacao = "15555218135";
-                boolean enviadoSms = enviaSMS("+" + telefoneSemFormatacao, mensagemSms);
-
-                if(enviadoSms){
+               // boolean enviadoSms = enviaSMS("+" + telefoneSemFormatacao, mensagemSms);
+                validarSenhaUsuario(nomeUsuario,matriculaUsuario,senhaUsuario,confirmarSenhaUsuario,cursoUsuario,telefoneSemFormatacao,mensagemSms);
+              /*  if(enviadoSms){
                     Intent intent = new Intent(CadastroActivity.this, ActivityValidador.class);
                     startActivity(intent);
                     finish();
                 }else{
                     Toast.makeText(CadastroActivity.this, "Erro ao enviar a mensagem, Tente novamente",Toast.LENGTH_LONG).show();
-                }
+                }*/
 
             }
         });
@@ -175,8 +175,29 @@ public class CadastroActivity extends Activity {
     }
 
 
-    public void cadastrarUsuario(){
-        autenticacao = ConfiguracaoFirebase.getFirebaseAutenticacao();
+    public void validarSenhaUsuario(String nome, String matricula, String senha,String confirmarSenha,String curso,String telefoneSemFormatacao,String mensagemSms){
+        if(nome.equals("") || matricula.equals("") || senha.equals("") || confirmarSenha.equals("")|| curso.equals("")){
+            Toast.makeText(CadastroActivity.this, "Campos vazios, favor preencher!",Toast.LENGTH_LONG).show();
+        }else {
+            if (senha.equals(confirmarSenha)) {
+          /*  ActivityValidador activityValidador = new ActivityValidador();
+            referenciaFirebase = ConfiguracaoFirebase.getFirebase();
+            referenciaFirebase.child("Nome").setValue(nome);
+            referenciaFirebase.child("Matricula").setValue(matricula);
+            referenciaFirebase.child("Senha").setValue(senha);
+            referenciaFirebase.child("Curso").setValue(curso);*/
+                boolean enviadoSms = enviaSMS("+" + telefoneSemFormatacao, mensagemSms);
+                if (enviadoSms) {
+                    Intent intent = new Intent(CadastroActivity.this, ActivityValidador.class);
+                    startActivity(intent);
+                    finish();
+                } else {
+                    Toast.makeText(CadastroActivity.this, "Erro ao enviar a mensagem, Tente novamente", Toast.LENGTH_LONG).show();
+                }
+            } else {
+                Toast.makeText(CadastroActivity.this, "As senhas não coincidem", Toast.LENGTH_LONG).show();
+            }
 
+        }
     }
 }

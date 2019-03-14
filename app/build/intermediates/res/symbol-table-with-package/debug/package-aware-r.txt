@@ -768,7 +768,7 @@ id line3
 id listMode
 id list_item
 id logarId
-id matriculaId
+id matriculaMainId
 id media_actions
 id message
 id middle
@@ -805,7 +805,7 @@ id search_plate
 id search_src_text
 id search_voice_btn
 id select_dialog_listview
-id senhaId
+id senhaMainId
 id shortcut
 id showCustom
 id showHome

@@ -20,7 +20,7 @@
         tools:layout_editor_absoluteY="33dp" />
 
     <EditText
-        android:id="@+id/matriculaId"
+        android:id="@+id/matriculaMainId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView"
@@ -34,13 +34,13 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/senhaId"
+        android:id="@+id/senhaMainId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/matriculaId"
-        android:layout_alignLeft="@+id/matriculaId"
-        android:layout_alignEnd="@+id/matriculaId"
-        android:layout_alignRight="@+id/matriculaId"
+        android:layout_alignStart="@+id/matriculaMainId"
+        android:layout_alignLeft="@+id/matriculaMainId"
+        android:layout_alignEnd="@+id/matriculaMainId"
+        android:layout_alignRight="@+id/matriculaMainId"
         android:layout_centerVertical="true"
         android:ems="10"
         android:hint="Senha"
@@ -50,11 +50,11 @@
         android:id="@+id/logarId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/senhaId"
-        android:layout_alignLeft="@+id/senhaId"
-        android:layout_alignRight="@+id/senhaId"
-        android:layout_alignStart="@+id/senhaId"
-        android:layout_below="@+id/senhaId"
+        android:layout_alignEnd="@+id/senhaMainId"
+        android:layout_alignLeft="@+id/senhaMainId"
+        android:layout_alignRight="@+id/senhaMainId"
+        android:layout_alignStart="@+id/senhaMainId"
+        android:layout_below="@+id/senhaMainId"
         android:layout_marginTop="22dp"
         android:text="Entrar" />
 

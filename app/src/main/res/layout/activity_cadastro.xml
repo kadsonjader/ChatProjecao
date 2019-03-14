@@ -36,7 +36,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/matriculaId"
+        android:id="@+id/matriculaMainId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/nomeId"
@@ -48,12 +48,12 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/senhaId"
+        android:id="@+id/senhaMainId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/matriculaId"
-        android:layout_alignStart="@+id/matriculaId"
-        android:layout_alignLeft="@+id/matriculaId"
+        android:layout_below="@+id/matriculaMainId"
+        android:layout_alignStart="@+id/matriculaMainId"
+        android:layout_alignLeft="@+id/matriculaMainId"
         android:layout_marginTop="19dp"
         android:ems="10"
         android:hint="Senha"
@@ -63,9 +63,9 @@
         android:id="@+id/confirmarSenhaId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/senhaId"
-        android:layout_alignStart="@+id/senhaId"
-        android:layout_alignLeft="@+id/senhaId"
+        android:layout_below="@+id/senhaMainId"
+        android:layout_alignStart="@+id/senhaMainId"
+        android:layout_alignLeft="@+id/senhaMainId"
         android:layout_marginTop="19dp"
         android:ems="10"
         android:hint="Confirmar Senha"

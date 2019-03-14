@@ -4,7 +4,7 @@
             "outputFile": "/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nl/values-nl.xml",
             "map": [
                 {
-                    "source": "/home/kadsonjader/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/2694d373284b7f05c6befe26a714d5d4/res/values-nl/values.xml",
+                    "source": "/home/kadsonjader/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/84f3652b8b26251b40dd4df2fdcf2deb/res/values-nl/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/kadsonjader/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/eb4815e1272a043537ad2341e2f5cd6f/res/values-nl/values-nl.xml",
+                    "source": "/home/kadsonjader/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/0634f2063aaab8a566033ea5c58e15c0/res/values-nl/values-nl.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/home/kadsonjader/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/4dfef0b66d5c0429abd1d16d637cc06d/res/values-nl/values.xml",
+                    "source": "/home/kadsonjader/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/3dd8e048006a52dd9e16e486a1b54de3/res/values-nl/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
