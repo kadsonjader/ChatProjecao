@@ -3,6 +3,7 @@ package com.example.kadson.chatprojecao;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -10,10 +11,16 @@ import android.widget.Toast;
 import com.example.kadson.chatprojecao.helper.Preferencias;
 import com.example.kadson.chatprojecao.config.ConfiguracaoFirebase;
 import com.google.firebase.FirebaseApp;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.HashMap;
+
+import static android.content.ContentValues.TAG;
 
 public class MainActivity extends Activity {
     private EditText matricula;
@@ -28,39 +35,50 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         FirebaseApp.initializeApp(MainActivity.this);
         referenciaFirebase = ConfiguracaoFirebase.getFirebase();
+        final DatabaseReference perfil = FirebaseDatabase.getInstance().getReference("Perfis");
 
-         cadastroAtivity = findViewById(R.id.cadastrarId);
-         matricula = findViewById(R.id.matriculaMainId);
-         senha = findViewById(R.id.senhaMainId);
-         logar = findViewById(R.id.logarId);
+        cadastroAtivity = findViewById(R.id.cadastrarId);
+        matricula = findViewById(R.id.matriculaMainId);
+        senha = findViewById(R.id.senhaMainId);
+        logar = findViewById(R.id.logarId);
 
-         logar.setOnClickListener(new View.OnClickListener() {
-             @Override
-             public void onClick(View view) {
+        logar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 String matriculaLogar = matricula.getText().toString();
-                String senhaLogar = senha.getText().toString();
+                final String senhaLogar = senha.getText().toString();
+                DatabaseReference camposFilhos = perfil.child("Perfil "+ matriculaLogar);
 
-                Query queryMatricula = referenciaFirebase.child("Perfis").orderByChild("Matricula").equalTo(matriculaLogar);
-                Query querySenha =  referenciaFirebase.child("Perfis").orderByChild("Senha").equalTo(senhaLogar);
-if(queryMatricula.equals(matriculaLogar) && querySenha.equals(senhaLogar)){
-                    Toast.makeText(MainActivity.this,"Logado com Sucesso!",Toast.LENGTH_LONG).show();
-                }else{
-                    Toast.makeText(MainActivity.this,"Matricula ou senha incorretos!",Toast.LENGTH_LONG).show();
-                }
-                 System.out.println(matriculaLogar);
-                 System.out.println(senhaLogar);
-                 System.out.println(queryMatricula);
-                 System.out.println(querySenha);
-             }
-         });
+                camposFilhos.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        String senhaUsuario = dataSnapshot.child("Senha").getValue(String.class);
+                        String nomeUsuario = dataSnapshot.child("Nome").getValue(String.class);
+                        if (senhaLogar.equals(senhaUsuario)) {
+                            Toast.makeText(MainActivity.this, "Credenciais Corretas", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "Bem Vindo "+nomeUsuario, Toast.LENGTH_LONG).show();
+                        } else {
+                            Toast.makeText(MainActivity.this, "Credenciais Incorretas", Toast.LENGTH_LONG).show();
+                        }
+                    }
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+                        Log.w(TAG, "onCancelled", databaseError.toException());
+                    }
+                });
 
 
-         cadastroAtivity.setOnClickListener(new View.OnClickListener() {
-             @Override
-             public void onClick(View v) {
-                   startActivity(new Intent(MainActivity.this,CadastroActivity.class));
-             }
-         });
+
+            }
+        });
+
+
+        cadastroAtivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,CadastroActivity.class));
+            }
+        });
     }
 
 }

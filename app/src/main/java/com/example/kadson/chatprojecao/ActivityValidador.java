@@ -1,6 +1,7 @@
 package com.example.kadson.chatprojecao;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -53,11 +54,12 @@ public class ActivityValidador extends Activity {
                 if(tokenDigitado.equals(tokenGerado)){
                     referenciaFirebase = ConfiguracaoFirebase.getFirebase();
                     DatabaseReference perfil = referenciaFirebase.child("Perfis");
-                    referenciaFirebase.child("Perfis").child("Perfil " + nomeUsuario).child("Nome").setValue(nomeUsuario);
-                    referenciaFirebase.child("Perfis").child("Perfil " + nomeUsuario).child("Matricula").setValue(matriculaUsuario);
-                    referenciaFirebase.child("Perfis").child("Perfil " + nomeUsuario).child("Senha").setValue(senhaUsuario);
-                    referenciaFirebase.child("Perfis").child("Perfil " + nomeUsuario).child("Curso").setValue(cursoUsuario);
+                    referenciaFirebase.child("Perfis").child("Perfil " + matriculaUsuario).child("Nome").setValue(nomeUsuario);
+                    referenciaFirebase.child("Perfis").child("Perfil " + matriculaUsuario).child("Matricula").setValue(matriculaUsuario);
+                    referenciaFirebase.child("Perfis").child("Perfil " + matriculaUsuario).child("Senha").setValue(senhaUsuario);
+                    referenciaFirebase.child("Perfis").child("Perfil " + matriculaUsuario).child("Curso").setValue(cursoUsuario);
                     Toast.makeText(ActivityValidador.this,"Token Validado com Sucesso!",Toast.LENGTH_LONG).show();
+                    startActivity(new Intent(ActivityValidador.this,MainActivity.class));
                 }else{
                     Toast.makeText(ActivityValidador.this,"Token não validado",Toast.LENGTH_LONG).show();
                 }

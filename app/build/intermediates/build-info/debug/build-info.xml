@@ -1,31 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
-    api-level="22"
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="24"
     build-mode="COLD"
-    density="xhdpi"
+    density="xxxhdpi"
     format="10"
+    ir-eligibility="COMPATIBLE"
     plugin-version="3.3.2"
-    timestamp="1552360537115"
+    timestamp="1552790438402"
     token="-6474284796655071385"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="428" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="24" />
     <task
         name="verifier"
-        duration="0" />
+        duration="2" />
+
+    <artifact
+        location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+        type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1552349918373"
+        timestamp="1552790284670"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
@@ -67,18 +72,11 @@
     <build
         build-mode="COLD"
         ir-eligibility="COMPATIBLE"
-        timestamp="1552360223567"
+        timestamp="1552790438402"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
-        <artifact
-            location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
-            type="SPLIT_MAIN" />
     </build>
-    <build
-        build-mode="COLD"
-        timestamp="1552360537115"
-        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>
