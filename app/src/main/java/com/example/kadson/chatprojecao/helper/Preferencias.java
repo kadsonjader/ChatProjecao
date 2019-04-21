@@ -2,6 +2,7 @@ package com.example.kadson.chatprojecao.helper;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.widget.Spinner;
 
 import java.util.HashMap;
 
@@ -27,13 +28,12 @@ public class Preferencias {
         preferences = contexo.getSharedPreferences(NOME_ARQUIVO, MODE);
         editor = preferences.edit();
     }
-
     public void salvarUsuarioPreferencias(String nome, String matricula, String senha, String curso, String telefone, String token){
 
         editor.putString(CHAVE_NOME, nome);
         editor.putString(CHAVE_MATRICULA, matricula);
         editor.putString(CHAVE_SENHA, senha);
-        editor.putString(CHAVE_CURSO, curso);
+        editor.putString(CHAVE_CURSO, String.valueOf(curso));
         editor.putString(CHAVE_TELEFONE, telefone);
         editor.putString(CHAVE_TOKEN, token);
         editor.commit();

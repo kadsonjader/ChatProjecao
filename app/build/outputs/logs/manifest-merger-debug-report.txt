@@ -1,15 +1,14 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-25:12
+ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-28:12
+MERGED from [com.android.support:design:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/b86b43bdf38fe3e75f058ab3e7a8e8a9/AndroidManifest.xml:17:1-31:12
 MERGED from [com.github.rtoshiro.mflibrary:mflibrary:1.0.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/mflibrary-1.0.0.aar/e0a6b531f483c56e726436917ff147f6/AndroidManifest.xml:2:1-17:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/0634f2063aaab8a566033ea5c58e15c0/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/3cd030499cfe93b58131dcde1dcd6986/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/7756a99b94e8970dc3fa8ffb48b3c9f0/AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/ae935978c40409334606be3a571bb69c/AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/fc8f8812f6b2515c52a0c3b194004b25/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:transition:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/684234dbde7682b68e3ba684a2a20f02/AndroidManifest.xml:17:1-28:12
 MERGED from [com.google.firebase:firebase-database:16.0.6] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.6.aar/2c0a05696d443dcb835b6fc387d1c9a2/AndroidManifest.xml:15:1-27:12
 MERGED from [com.google.firebase:firebase-auth:16.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/2172256a570293e3302c2812d5e92f79/AndroidManifest.xml:17:1-42:12
 MERGED from [com.google.firebase:firebase-core:16.0.7] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.7.aar/352e972ae92555d37aef3ebbacee0d0f/AndroidManifest.xml:2:1-9:12
@@ -30,32 +29,35 @@ MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /home/ka
 MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/03075fa80d97894db6351fd57563cda1/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/3dd8e048006a52dd9e16e486a1b54de3/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-v4:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/8e1d42eb38741dd8f8144267680d2ff9/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-fragment:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/654586642d5de123ea12f5717dabfcaf/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-ui:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/f339afdfb6472b48d90d193cf6a5eaf0/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/7756a99b94e8970dc3fa8ffb48b3c9f0/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/ae935978c40409334606be3a571bb69c/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/fc8f8812f6b2515c52a0c3b194004b25/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-media-compat:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/8aaae8276605585720c3305d5a662616/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/654586642d5de123ea12f5717dabfcaf/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-utils:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/ada977ce0dd16ec800f44b1f700602fa/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/f339afdfb6472b48d90d193cf6a5eaf0/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/5fcd1445472c2861c7f1f649ad1693a4/AndroidManifest.xml:17:1-31:12
 MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-16.0.1.aar/ce717732140a2d8a7b9eb753a852a7dc/AndroidManifest.xml:2:1-7:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/33c91aa7ab45af713899755ed1a96cb4/AndroidManifest.xml:17:1-30:12
-INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-28:12
 	package
 		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:3:5-46
 		INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml
 		INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml
-		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-25:12
+		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-28:12
 		INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml
-		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-25:12
+		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-28:12
 		INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:4:5-66
+ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:5:5-67
 MERGED from [com.google.firebase:firebase-database:16.0.6] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.6.aar/2c0a05696d443dcb835b6fc387d1c9a2/AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-database:16.0.6] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.6.aar/2c0a05696d443dcb835b6fc387d1c9a2/AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.5.aar/fa92ff5981e5a927e22e62ca5d08fedf/AndroidManifest.xml:22:5-67
@@ -66,26 +68,24 @@ MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] /home/kadsonjad
 MERGED from [com.google.firebase:firebase-analytics-impl:16.3.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.3.0.aar/89000b38fcb5b49eecb48a2a37ad4a0f/AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-iid:17.0.3] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/514b44902ee129fd785d119667866b91/AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-iid:17.0.3] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/514b44902ee129fd785d119667866b91/AndroidManifest.xml:23:5-67
-	android:name
-		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:4:22-64
-uses-permission#android.permission.SEND_SMS
-ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:5:5-66
 	android:name
 		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.SEND_SMS
+ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:6:5-67
+	android:name
+		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:6:22-64
 application
-ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:7:5-23:19
+ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:8:5-26:19
+MERGED from [com.android.support:design:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/b86b43bdf38fe3e75f058ab3e7a8e8a9/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:design:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/b86b43bdf38fe3e75f058ab3e7a8e8a9/AndroidManifest.xml:25:5-29:19
 MERGED from [com.github.rtoshiro.mflibrary:mflibrary:1.0.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/mflibrary-1.0.0.aar/e0a6b531f483c56e726436917ff147f6/AndroidManifest.xml:11:5-15:19
 MERGED from [com.github.rtoshiro.mflibrary:mflibrary:1.0.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/mflibrary-1.0.0.aar/e0a6b531f483c56e726436917ff147f6/AndroidManifest.xml:11:5-15:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/0634f2063aaab8a566033ea5c58e15c0/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/0634f2063aaab8a566033ea5c58e15c0/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/3cd030499cfe93b58131dcde1dcd6986/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/3cd030499cfe93b58131dcde1dcd6986/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/7756a99b94e8970dc3fa8ffb48b3c9f0/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/7756a99b94e8970dc3fa8ffb48b3c9f0/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/ae935978c40409334606be3a571bb69c/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/ae935978c40409334606be3a571bb69c/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/fc8f8812f6b2515c52a0c3b194004b25/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/fc8f8812f6b2515c52a0c3b194004b25/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/684234dbde7682b68e3ba684a2a20f02/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/684234dbde7682b68e3ba684a2a20f02/AndroidManifest.xml:22:5-26:19
 MERGED from [com.google.firebase:firebase-auth:16.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/2172256a570293e3302c2812d5e92f79/AndroidManifest.xml:23:5-40:19
 MERGED from [com.google.firebase:firebase-auth:16.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/2172256a570293e3302c2812d5e92f79/AndroidManifest.xml:23:5-40:19
 MERGED from [com.google.firebase:firebase-core:16.0.7] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.7.aar/352e972ae92555d37aef3ebbacee0d0f/AndroidManifest.xml:7:5-20
@@ -122,68 +122,76 @@ MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/kadsonj
 MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/3dd8e048006a52dd9e16e486a1b54de3/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:support-v4:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/8e1d42eb38741dd8f8144267680d2ff9/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-v4:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/8e1d42eb38741dd8f8144267680d2ff9/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/654586642d5de123ea12f5717dabfcaf/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/654586642d5de123ea12f5717dabfcaf/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-ui:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/f339afdfb6472b48d90d193cf6a5eaf0/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-ui:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/f339afdfb6472b48d90d193cf6a5eaf0/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/7756a99b94e8970dc3fa8ffb48b3c9f0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/7756a99b94e8970dc3fa8ffb48b3c9f0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/ae935978c40409334606be3a571bb69c/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/ae935978c40409334606be3a571bb69c/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/fc8f8812f6b2515c52a0c3b194004b25/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/fc8f8812f6b2515c52a0c3b194004b25/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:support-media-compat:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/8aaae8276605585720c3305d5a662616/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-media-compat:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/8aaae8276605585720c3305d5a662616/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/654586642d5de123ea12f5717dabfcaf/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/654586642d5de123ea12f5717dabfcaf/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-core-utils:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/ada977ce0dd16ec800f44b1f700602fa/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-core-utils:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/ada977ce0dd16ec800f44b1f700602fa/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/f339afdfb6472b48d90d193cf6a5eaf0/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/f339afdfb6472b48d90d193cf6a5eaf0/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-compat:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/5fcd1445472c2861c7f1f649ad1693a4/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-compat:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/5fcd1445472c2861c7f1f649ad1693a4/AndroidManifest.xml:25:5-29:19
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/33c91aa7ab45af713899755ed1a96cb4/AndroidManifest.xml:24:5-28:19
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/33c91aa7ab45af713899755ed1a96cb4/AndroidManifest.xml:24:5-28:19
 	android:supportsRtl
-		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:12:9-35
+		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:10:9-41
+		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:12:9-41
 	android:roundIcon
-		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:11:9-54
+		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:13:9-54
 	android:icon
-		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:9:9-43
+		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:8:9-35
+		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:13:9-40
+		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:15:9-65
+activity#com.example.kadson.chatprojecao.MensagensActivity
+ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:16:9-64
+	android:name
+		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:16:19-52
 activity#com.example.kadson.chatprojecao.MainActivity
-ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:14:9-20:20
+ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:17:9-23:20
 	android:name
-		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:14:19-47
+		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:17:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:15:13-19:29
+ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:18:13-22:29
 action#android.intent.action.MAIN
-ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:16:17-69
+ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:19:17-69
 	android:name
-		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:16:25-66
+		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:19:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:18:17-77
+ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:21:17-77
 	android:name
-		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:18:27-74
+		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:21:27-74
 activity#com.example.kadson.chatprojecao.CadastroActivity
-ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:21:9-54
+ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:24:9-54
 	android:name
-		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:21:19-51
+		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:24:19-51
 activity#com.example.kadson.chatprojecao.ActivityValidador
-ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:22:9-64
+ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:25:9-55
 	android:name
-		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:22:19-52
+		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:25:19-52
 uses-sdk
 INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml
 INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/b86b43bdf38fe3e75f058ab3e7a8e8a9/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/b86b43bdf38fe3e75f058ab3e7a8e8a9/AndroidManifest.xml:21:5-23:62
 MERGED from [com.github.rtoshiro.mflibrary:mflibrary:1.0.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/mflibrary-1.0.0.aar/e0a6b531f483c56e726436917ff147f6/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.rtoshiro.mflibrary:mflibrary:1.0.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/mflibrary-1.0.0.aar/e0a6b531f483c56e726436917ff147f6/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/0634f2063aaab8a566033ea5c58e15c0/AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/0634f2063aaab8a566033ea5c58e15c0/AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/3cd030499cfe93b58131dcde1dcd6986/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/3cd030499cfe93b58131dcde1dcd6986/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/7756a99b94e8970dc3fa8ffb48b3c9f0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/7756a99b94e8970dc3fa8ffb48b3c9f0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/ae935978c40409334606be3a571bb69c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/ae935978c40409334606be3a571bb69c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/fc8f8812f6b2515c52a0c3b194004b25/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/fc8f8812f6b2515c52a0c3b194004b25/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/684234dbde7682b68e3ba684a2a20f02/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/684234dbde7682b68e3ba684a2a20f02/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-database:16.0.6] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.6.aar/2c0a05696d443dcb835b6fc387d1c9a2/AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-database:16.0.6] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.6.aar/2c0a05696d443dcb835b6fc387d1c9a2/AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-auth:16.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/2172256a570293e3302c2812d5e92f79/AndroidManifest.xml:21:5-44
@@ -224,14 +232,20 @@ MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/kadsonj
 MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/3dd8e048006a52dd9e16e486a1b54de3/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/8e1d42eb38741dd8f8144267680d2ff9/AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-v4:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/8e1d42eb38741dd8f8144267680d2ff9/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/654586642d5de123ea12f5717dabfcaf/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-fragment:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/654586642d5de123ea12f5717dabfcaf/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-ui:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/f339afdfb6472b48d90d193cf6a5eaf0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/f339afdfb6472b48d90d193cf6a5eaf0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/7756a99b94e8970dc3fa8ffb48b3c9f0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/7756a99b94e8970dc3fa8ffb48b3c9f0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/ae935978c40409334606be3a571bb69c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/ae935978c40409334606be3a571bb69c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/fc8f8812f6b2515c52a0c3b194004b25/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/fc8f8812f6b2515c52a0c3b194004b25/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-media-compat:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/8aaae8276605585720c3305d5a662616/AndroidManifest.xml:21:5-23:63
 MERGED from [com.android.support:support-media-compat:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/8aaae8276605585720c3305d5a662616/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/654586642d5de123ea12f5717dabfcaf/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/654586642d5de123ea12f5717dabfcaf/AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-core-utils:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/ada977ce0dd16ec800f44b1f700602fa/AndroidManifest.xml:21:5-23:61
 MERGED from [com.android.support:support-core-utils:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/ada977ce0dd16ec800f44b1f700602fa/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/f339afdfb6472b48d90d193cf6a5eaf0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/f339afdfb6472b48d90d193cf6a5eaf0/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/5fcd1445472c2861c7f1f649ad1693a4/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/5fcd1445472c2861c7f1f649ad1693a4/AndroidManifest.xml:21:5-23:58
 MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-16.0.1.aar/ce717732140a2d8a7b9eb753a852a7dc/AndroidManifest.xml:5:5-44
@@ -241,7 +255,7 @@ MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/kadsonjader/.gradle/cac
 INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml
 INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/0634f2063aaab8a566033ea5c58e15c0/AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:design:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/b86b43bdf38fe3e75f058ab3e7a8e8a9/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
 		INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml
 		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml
@@ -251,29 +265,33 @@ INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/
 		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml
 		INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:appcompat-v7:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/0634f2063aaab8a566033ea5c58e15c0/AndroidManifest.xml:26:9-28:38
+ADDED from [com.android.support:design:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/b86b43bdf38fe3e75f058ab3e7a8e8a9/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/0634f2063aaab8a566033ea5c58e15c0/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/0634f2063aaab8a566033ea5c58e15c0/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:transition:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/684234dbde7682b68e3ba684a2a20f02/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/684234dbde7682b68e3ba684a2a20f02/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/8e1d42eb38741dd8f8144267680d2ff9/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/8e1d42eb38741dd8f8144267680d2ff9/AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/7756a99b94e8970dc3fa8ffb48b3c9f0/AndroidManifest.xml:23:9-25:38
 MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/7756a99b94e8970dc3fa8ffb48b3c9f0/AndroidManifest.xml:23:9-25:38
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/ae935978c40409334606be3a571bb69c/AndroidManifest.xml:23:9-25:38
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/ae935978c40409334606be3a571bb69c/AndroidManifest.xml:23:9-25:38
 MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/fc8f8812f6b2515c52a0c3b194004b25/AndroidManifest.xml:23:9-25:38
 MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/fc8f8812f6b2515c52a0c3b194004b25/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-v4:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/8e1d42eb38741dd8f8144267680d2ff9/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-v4:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/8e1d42eb38741dd8f8144267680d2ff9/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/654586642d5de123ea12f5717dabfcaf/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/654586642d5de123ea12f5717dabfcaf/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-ui:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/f339afdfb6472b48d90d193cf6a5eaf0/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-ui:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/f339afdfb6472b48d90d193cf6a5eaf0/AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:support-media-compat:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/8aaae8276605585720c3305d5a662616/AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:support-media-compat:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/8aaae8276605585720c3305d5a662616/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/654586642d5de123ea12f5717dabfcaf/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/654586642d5de123ea12f5717dabfcaf/AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:support-core-utils:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/ada977ce0dd16ec800f44b1f700602fa/AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:support-core-utils:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/ada977ce0dd16ec800f44b1f700602fa/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/f339afdfb6472b48d90d193cf6a5eaf0/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/f339afdfb6472b48d90d193cf6a5eaf0/AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:support-compat:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/5fcd1445472c2861c7f1f649ad1693a4/AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:support-compat:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/5fcd1445472c2861c7f1f649ad1693a4/AndroidManifest.xml:26:9-28:38
 	android:value
-		ADDED from [com.android.support:appcompat-v7:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/0634f2063aaab8a566033ea5c58e15c0/AndroidManifest.xml:28:13-35
+		ADDED from [com.android.support:design:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/b86b43bdf38fe3e75f058ab3e7a8e8a9/AndroidManifest.xml:28:13-35
 	android:name
-		ADDED from [com.android.support:appcompat-v7:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/0634f2063aaab8a566033ea5c58e15c0/AndroidManifest.xml:27:13-51
+		ADDED from [com.android.support:design:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/b86b43bdf38fe3e75f058ab3e7a8e8a9/AndroidManifest.xml:27:13-51
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-database:16.0.6] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.6.aar/2c0a05696d443dcb835b6fc387d1c9a2/AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.5] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.5.aar/fa92ff5981e5a927e22e62ca5d08fedf/AndroidManifest.xml:23:5-79

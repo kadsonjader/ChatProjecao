@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.example.kadson.chatprojecao.config.ConfiguracaoFirebase;
 import com.example.kadson.chatprojecao.helper.Preferencias;
 import com.example.kadson.chatprojecao.CadastroActivity;
+import com.example.kadson.chatprojecao.model.Usuario;
 import com.github.rtoshiro.util.format.SimpleMaskFormatter;
 import com.github.rtoshiro.util.format.text.MaskTextWatcher;
 import com.google.firebase.database.DatabaseReference;
@@ -27,7 +28,6 @@ public class ActivityValidador extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_validador);
-
 
         codigoId = findViewById(R.id.codigoId);
         botaoValidarId = findViewById(R.id.botarValidarId);

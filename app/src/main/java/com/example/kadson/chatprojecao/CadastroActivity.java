@@ -10,29 +10,39 @@ import android.os.Bundle;
 import android.telephony.SmsManager;
 import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.example.kadson.chatprojecao.config.ConfiguracaoFirebase;
 import com.example.kadson.chatprojecao.helper.Permissao;
 import com.example.kadson.chatprojecao.helper.Preferencias;
 import com.example.kadson.chatprojecao.model.Usuario;
-import com.example.kadson.chatprojecao.ActivityValidador;
 import com.github.rtoshiro.util.format.SimpleMaskFormatter;
 import com.github.rtoshiro.util.format.text.MaskTextWatcher;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Random;
+
+import static android.content.ContentValues.TAG;
 
 public class CadastroActivity extends Activity {
     private EditText nome;
     private EditText matricula;
     private EditText senha;
     private EditText confirmarSenha;
-    private EditText curso;
+    //private EditText curso;
+    private Spinner curso;
     private Button cadastrar;
     private EditText cdpais;
     private EditText ddd;
@@ -49,6 +59,8 @@ public class CadastroActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro);
+        referenciaFirebase = ConfiguracaoFirebase.getFirebase();
+        final DatabaseReference cursofirebase = FirebaseDatabase.getInstance().getReference("Curso");
 
       Permissao.validaPermissoes(1,this,permissoesNecessarias);
 
@@ -56,7 +68,7 @@ public class CadastroActivity extends Activity {
         matricula = findViewById(R.id.matriculaMainId);
         senha = findViewById(R.id.senhaMainId);
         confirmarSenha = findViewById(R.id.confirmarSenhaId);
-        curso = findViewById(R.id.cursoId);
+
         cadastrar = findViewById(R.id.botaoCadastrarId);
         cdpais = findViewById(R.id.cdPaisId);
         ddd = findViewById(R.id.dddId);
@@ -74,6 +86,37 @@ public class CadastroActivity extends Activity {
         cdpais.addTextChangedListener(maskcdpais);
         ddd.addTextChangedListener(maskddd);
 
+
+
+
+        cursofirebase.child("nomeCursos").addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                final List<String> cursosLista = new ArrayList<String>();
+                curso = findViewById(R.id.cursoId);
+
+                for (DataSnapshot areaSnapshot : dataSnapshot.getChildren()) {
+                    String cursoNome = areaSnapshot.getValue(String.class);
+                    cursosLista.add(cursoNome);
+                }
+
+                ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>
+                        (CadastroActivity.this, android.R.layout.simple_spinner_item,cursosLista);
+                arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                curso.setAdapter(arrayAdapter);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                Log.w(TAG, "onCancelled", databaseError.toException());
+            }
+        });
+
+
+
+
+
+
         cadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -85,7 +128,7 @@ public class CadastroActivity extends Activity {
                 String matriculaUsuario = matricula.getText().toString();
                 String senhaUsuario = senha.getText().toString();
                 String confirmarSenhaUsuario = confirmarSenha.getText().toString();
-                String cursoUsuario = curso.getText().toString();
+                String cursoUsuario = curso.getSelectedItem().toString();
                 String telefoneCompleto =
 
                         cdpais.getText().toString() +
@@ -96,6 +139,7 @@ public class CadastroActivity extends Activity {
                 usuario.setMatricula(matriculaUsuario);
                 usuario.setSenha(senhaUsuario);
                 usuario.setCurso(cursoUsuario);
+
 
                 String telefoneSemFormatacao = telefoneCompleto.replace("+","");
                 telefoneSemFormatacao = telefoneSemFormatacao.replace("-","");
@@ -115,7 +159,7 @@ public class CadastroActivity extends Activity {
 
                 HashMap<String, String> usuario = preferencias.getDadosUsuario();
 
-                Log.i("TOKEN", "T: " + usuario.get("token"));
+                Log.i("TOKEN", "nome: " + usuario.get("nome"));
 
 
                 //Envio do SMS
@@ -175,7 +219,7 @@ public class CadastroActivity extends Activity {
     }
 
 
-    public void validarSenhaUsuario(String nome, String matricula, String senha,String confirmarSenha,String curso,String telefoneSemFormatacao,String mensagemSms){
+    public void validarSenhaUsuario(String nome, String matricula, String senha, String confirmarSenha, String curso, String telefoneSemFormatacao, String mensagemSms){
         if(nome.equals("") || matricula.equals("") || senha.equals("") || confirmarSenha.equals("")|| curso.equals("")){
             Toast.makeText(CadastroActivity.this, "Campos vazios, favor preencher!",Toast.LENGTH_LONG).show();
         }else {

@@ -71,7 +71,7 @@
         android:hint="Confirmar Senha"
         android:inputType="textPassword" />
 
-    <EditText
+   <!-- <EditText
         android:id="@+id/cursoId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -81,18 +81,30 @@
         android:layout_marginTop="18dp"
         android:ems="10"
         android:hint="Curso"
+        android:inputType="textPersonName" /> -->
+
+    <Spinner
+        android:id="@+id/cursoId"
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirmarSenhaId"
+        android:layout_alignStart="@+id/confirmarSenhaId"
+        android:layout_alignLeft="@+id/confirmarSenhaId"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Curso"
         android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/telefoneId"
         android:layout_width="128dp"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/cursoId"
         android:layout_alignEnd="@+id/cursoId"
         android:layout_alignRight="@+id/cursoId"
-        android:layout_below="@+id/cursoId"
-        android:layout_marginEnd="9dp"
-        android:layout_marginRight="9dp"
-        android:layout_marginTop="13dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="-8dp"
+        android:layout_marginRight="-8dp"
         android:ems="10"
         android:hint="Telefone"
         android:inputType="textPersonName" />
@@ -102,8 +114,11 @@
         android:layout_width="40dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/botaoCadastrarId"
-        android:layout_toLeftOf="@+id/telefoneId"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="0dp"
         android:layout_toStartOf="@+id/telefoneId"
+        android:layout_toLeftOf="@+id/telefoneId"
         android:ems="10"
         android:hint="DDD"
         android:inputType="textPersonName" />
@@ -113,9 +128,12 @@
         android:layout_width="40dp"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/dddId"
-        android:layout_alignBottom="@+id/dddId"
-        android:layout_alignLeft="@+id/cursoId"
         android:layout_alignStart="@+id/cursoId"
+        android:layout_alignLeft="@+id/cursoId"
+        android:layout_alignBottom="@+id/cursoId"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="-43dp"
+        android:layout_marginBottom="-4dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="+55" />
