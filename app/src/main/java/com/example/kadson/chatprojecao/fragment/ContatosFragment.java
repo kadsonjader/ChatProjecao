@@ -1,25 +1,25 @@
 package com.example.kadson.chatprojecao.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.example.kadson.chatprojecao.ConversaActivity;
 import com.example.kadson.chatprojecao.R;
-import com.example.kadson.chatprojecao.config.ConfiguracaoFirebase;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.GenericTypeIndicator;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -27,9 +27,6 @@ import java.util.List;
 public class ContatosFragment extends Fragment {
 
     private ListView listView;
-    private ArrayAdapter adapter;
-    private ArrayList<String> coordenadores;
-    private DatabaseReference firebase;
     DatabaseReference perfil = FirebaseDatabase.getInstance().getReference("Perfis");
 
     public ContatosFragment() {
@@ -38,7 +35,7 @@ public class ContatosFragment extends Fragment {
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(final LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         // Inflate the layout for this fragment
@@ -48,14 +45,21 @@ public class ContatosFragment extends Fragment {
         perfil.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                coordenadores = new ArrayList<>();
+                ArrayList<String> coordenadores = new ArrayList<>();
+                String array[];
 
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()){
-                    String nomeUsuario = dataSnapshot.child("Nome").getValue().toString();
-                    coordenadores.add(nomeUsuario);
+
+                        boolean nomeUsuariobolean = snapshot.child("Direção").exists();
+                        if(nomeUsuariobolean == true) {
+                            String nomeDirecao = snapshot.child("Direção").getValue().toString();
+                            coordenadores.add(nomeDirecao);
+                        }else{
+
+                        }
+
                 }
-                ArrayAdapter<String> adapter =
-                new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, coordenadores);
+                ArrayAdapter adapter = new ArrayAdapter<>(getActivity(),android.R.layout.simple_list_item_1, coordenadores);
                 listView.setAdapter(adapter);
             }
 
@@ -65,7 +69,18 @@ public class ContatosFragment extends Fragment {
             }
         });
 
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                String selectedFromList = (String) listView.getItemAtPosition(i);
+                Intent intent = new Intent(getActivity(), ConversaActivity.class);
 
-        return  view;
+                intent.putExtra("nome",selectedFromList);
+
+                startActivity(intent);
+            }
+        });
+
+        return view;
     }
 }

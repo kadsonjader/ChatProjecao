@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-28:12
-INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-28:12
-INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-28:12
-INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-28:12
+ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-29:12
 MERGED from [com.android.support:design:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/b86b43bdf38fe3e75f058ab3e7a8e8a9/AndroidManifest.xml:17:1-31:12
 MERGED from [com.github.rtoshiro.mflibrary:mflibrary:1.0.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/mflibrary-1.0.0.aar/e0a6b531f483c56e726436917ff147f6/AndroidManifest.xml:2:1-17:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/0634f2063aaab8a566033ea5c58e15c0/AndroidManifest.xml:17:1-31:12
@@ -39,20 +39,20 @@ MERGED from [com.android.support:support-core-ui:26.1.0] /home/kadsonjader/.grad
 MERGED from [com.android.support:support-compat:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/5fcd1445472c2861c7f1f649ad1693a4/AndroidManifest.xml:17:1-31:12
 MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-16.0.1.aar/ce717732140a2d8a7b9eb753a852a7dc/AndroidManifest.xml:2:1-7:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/33c91aa7ab45af713899755ed1a96cb4/AndroidManifest.xml:17:1-30:12
-INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-28:12
-INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-28:12
-INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-29:12
 	package
 		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:3:5-46
 		INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml
 		INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml
-		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-28:12
+		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-29:12
 		INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml
-		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-28:12
+		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:1-29:12
 		INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:2:11-69
@@ -75,7 +75,7 @@ ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/And
 	android:name
 		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:6:22-64
 application
-ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:8:5-26:19
+ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:8:5-27:19
 MERGED from [com.android.support:design:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/b86b43bdf38fe3e75f058ab3e7a8e8a9/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:design:26.1.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/b86b43bdf38fe3e75f058ab3e7a8e8a9/AndroidManifest.xml:25:5-29:19
 MERGED from [com.github.rtoshiro.mflibrary:mflibrary:1.0.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/mflibrary-1.0.0.aar/e0a6b531f483c56e726436917ff147f6/AndroidManifest.xml:11:5-15:19
@@ -141,43 +141,49 @@ MERGED from [com.android.support:support-compat:26.1.0] /home/kadsonjader/.gradl
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/33c91aa7ab45af713899755ed1a96cb4/AndroidManifest.xml:24:5-28:19
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/kadsonjader/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/33c91aa7ab45af713899755ed1a96cb4/AndroidManifest.xml:24:5-28:19
 	android:supportsRtl
-		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:14:9-35
+		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:12:9-41
+		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:11:9-41
 	android:roundIcon
-		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:13:9-54
+		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:12:9-54
 	android:icon
-		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:11:9-43
+		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:10:9-43
 	android:allowBackup
-		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:15:9-65
+		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:14:9-65
+activity#com.example.kadson.chatprojecao.ConversaActivity
+ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:15:9-16:72
+	android:parentActivityName
+		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:16:13-60
+	android:name
+		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:15:19-51
 activity#com.example.kadson.chatprojecao.MensagensActivity
-ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:16:9-64
+ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:17:9-55
 	android:name
-		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:16:19-52
+		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:17:19-52
 activity#com.example.kadson.chatprojecao.MainActivity
-ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:17:9-23:20
+ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:18:9-24:20
 	android:name
-		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:17:19-47
+		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:18:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:18:13-22:29
+ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:19:13-23:29
 action#android.intent.action.MAIN
-ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:19:17-69
+ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:20:17-69
 	android:name
-		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:19:25-66
+		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:20:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:21:17-77
+ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:22:17-77
 	android:name
-		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:21:27-74
+		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:22:27-74
 activity#com.example.kadson.chatprojecao.CadastroActivity
-ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:24:9-54
+ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:25:9-54
 	android:name
-		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:24:19-51
+		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:25:19-51
 activity#com.example.kadson.chatprojecao.ActivityValidador
-ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:25:9-55
+ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:26:9-55
 	android:name
-		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:25:19-52
+		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:26:19-52
 uses-sdk
 INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml

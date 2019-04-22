@@ -2,26 +2,27 @@
 <instant-run
     abi="x86"
     api-level="22"
-    build-mode="FULL"
+    build-mode="COLD"
     density="xhdpi"
     format="10"
+    ir-eligibility="COMPATIBLE"
     plugin-version="3.3.2"
-    timestamp="1555886293789"
+    timestamp="1555975706910"
     token="-6474284796655071385"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="916" />
+        duration="239" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="105" />
+        duration="29" />
     <task
         name="verifier"
-        duration="21" />
+        duration="4" />
 
     <artifact
         location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
@@ -29,43 +30,16 @@
     <artifact
         location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
         type="SPLIT_MAIN" />
-    <artifact
-        location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-        type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1555886293789"
+        timestamp="1555971212220"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
             location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
@@ -77,10 +51,10 @@
             location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
             location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
@@ -97,9 +71,60 @@
         <artifact
             location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="R_CLASS_CHANGE"
+        timestamp="1555971565419"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="FIELD_ADDED"
+        timestamp="1555974987553"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
+        <artifact
+            location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1555975706910"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>

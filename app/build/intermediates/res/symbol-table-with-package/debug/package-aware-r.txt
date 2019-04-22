@@ -812,6 +812,8 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_action_arrow_left
+drawable ic_action_send
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_menu_camera
@@ -879,6 +881,7 @@ id blocking
 id botaoCadastrarId
 id botarValidarId
 id bottom
+id bt_enviar
 id buttonPanel
 id cadastrarId
 id cancel_action
@@ -912,6 +915,7 @@ id design_navigation_view
 id dimensions
 id direct
 id disableHome
+id ed_mensagem
 id edit_query
 id end
 id end_padder
@@ -953,6 +957,8 @@ id listMode
 id list_item
 id logarId
 id lv_contatos
+id lv_conversas
+id ly_conversa
 id masked
 id matriculaMainId
 id media_actions
@@ -1030,6 +1036,7 @@ id stl_tabs
 id submenuarrow
 id submit_area
 id tabMode
+id tb_conversa
 id telefoneId
 id text
 id text2
@@ -1103,6 +1110,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout activity_cadastro
+layout activity_conversa
 layout activity_main
 layout activity_mensagens
 layout activity_validador
