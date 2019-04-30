@@ -13,6 +13,7 @@ import android.widget.ListView;
 
 import com.example.kadson.chatprojecao.ConversaActivity;
 import com.example.kadson.chatprojecao.R;
+import com.example.kadson.chatprojecao.model.Conversa;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -52,7 +53,7 @@ public class ContatosFragment extends Fragment {
 
                         boolean nomeUsuariobolean = snapshot.child("Direção").exists();
                         if(nomeUsuariobolean == true) {
-                            String nomeDirecao = snapshot.child("Direção").getValue().toString();
+                            String nomeDirecao = snapshot.child("Nome").getValue().toString();
                             coordenadores.add(nomeDirecao);
                         }else{
 
@@ -80,6 +81,7 @@ public class ContatosFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
 
         return view;
     }

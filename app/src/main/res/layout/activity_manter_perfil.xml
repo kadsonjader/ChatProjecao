@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManterPerfil">
+
+    <Button
+        android:id="@+id/botaoCadastrarManterId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="150dp"
+        android:layout_below="@+id/telefoneId"
+        android:text="Cadastrar" />
+
+    <ImageView
+        android:id="@+id/imageView_manter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="85dp"
+        android:src="@drawable/logo_escola" />
+
+
+    <TextView
+        android:id="@+id/nomeManterId"
+        android:layout_width="207dp"
+        android:layout_height="39dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="110dp"
+        android:ems="10"
+        android:hint="Nome "
+        android:inputType="textPersonName"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/matriculaMainManterId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nomeId"
+        android:layout_alignStart="@+id/nomeId"
+        android:layout_below="@+id/nomeId"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="90dp"
+        android:ems="10"
+        android:hint="Matricula"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/senhaMainManterId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/matriculaMainId"
+        android:layout_alignStart="@+id/matriculaMainId"
+        android:layout_alignLeft="@+id/matriculaMainId"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="90dp"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPassword" />
+
+    <Spinner
+        android:id="@+id/cursoManterId"
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirmarSenhaId"
+        android:layout_alignStart="@+id/confirmarSenhaId"
+        android:layout_alignLeft="@+id/confirmarSenhaId"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="90dp"
+        android:ems="10"
+        android:hint="Curso"
+        android:inputType="textPersonName" />
+
+
+</RelativeLayout>

@@ -28,6 +28,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        <activity android:name="com.example.kadson.chatprojecao.ManterPerfil" />
         <activity
             android:name="com.example.kadson.chatprojecao.ConversaActivity"
             android:parentActivityName="com.example.kadson.chatprojecao.MensagensActivity" />
@@ -130,11 +131,6 @@
         <meta-data
             android:name="android.arch.lifecycle.VERSION"
             android:value="27.0.0-SNAPSHOT" />
-
-        <provider
-            android:name="com.android.tools.ir.server.InstantRunContentProvider"
-            android:authorities="com.example.kadson.chatprojecao.com.android.tools.ir.server.InstantRunContentProvider"
-            android:multiprocess="true" />
     </application>
 
 </manifest>

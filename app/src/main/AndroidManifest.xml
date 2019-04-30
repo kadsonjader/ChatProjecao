@@ -12,8 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".ConversaActivity"
-            android:parentActivityName=".MensagensActivity"></activity>
+        <activity android:name=".ManterPerfil"></activity>
+        <activity
+            android:name=".ConversaActivity"
+            android:parentActivityName=".MensagensActivity" />
         <activity android:name=".MensagensActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

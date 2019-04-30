@@ -7,13 +7,20 @@
     tools:context=".ConversaActivity">
 
     <include android:id="@+id/tb_conversa"
-        layout="@layout/toolbar"/>
+        layout="@layout/toolbar"
+        />
 
     <ListView
         android:id="@+id/lv_conversas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp" />
+        android:padding="8dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:longClickable="true"
+        android:linksClickable="true"
+        android:layout_below="@+id/tb_conversa"
+        android:layout_above="@id/ly_conversa"/>
 
     <LinearLayout
         android:id="@+id/ly_conversa"
@@ -37,6 +44,19 @@
             android:layout_height="wrap_content"
             android:src="@drawable/ic_action_send"
             android:theme="@style/AppTheme"/>
+        <ImageButton
+            android:id="@+id/bt_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_file_upload"
+            android:theme="@style/AppTheme"/>
+        <ImageButton
+            android:id="@+id/bt_documento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_attachment_2"
+            android:theme="@style/AppTheme"/>
+
 
     </LinearLayout>
 </RelativeLayout>

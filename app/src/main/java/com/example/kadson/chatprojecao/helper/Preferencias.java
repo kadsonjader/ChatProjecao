@@ -17,7 +17,9 @@ public class Preferencias {
     private final int MODE = 0;
     private SharedPreferences.Editor editor;
     private final String CHAVE_NOME = "nome";
+    private final String CHAVE_NOME_SESSAO = "nomeSessao";
     private final String CHAVE_MATRICULA = "matricula";
+    private final String CHAVE_MATRICULA_SESSAO = "matriculaSessao";
     private final String CHAVE_SENHA = "senha";
     private final String CHAVE_CURSO = "curso";
     private final String CHAVE_TELEFONE = "telefone";
@@ -50,6 +52,27 @@ public class Preferencias {
         dadosUsuario.put(CHAVE_TOKEN, preferences.getString(CHAVE_TOKEN,null));
 
         return dadosUsuario;
+
+    }
+
+    public void salvarNomeUsuario(String nome, String senha){
+        editor.putString(CHAVE_NOME_SESSAO, nome);
+        editor.putString(CHAVE_SENHA, senha);
+        editor.commit();
+    }
+
+    public void salvarMatriculaUsuario(String matricula){
+        editor.putString(CHAVE_MATRICULA_SESSAO,matricula);
+        editor.commit();
+    }
+
+    public HashMap<String , String> getDadosUsuario2(){
+        HashMap<String, String> dadosUsuario2 = new HashMap<>();
+        dadosUsuario2.put(CHAVE_NOME_SESSAO, preferences.getString(CHAVE_NOME_SESSAO,null));
+        dadosUsuario2.put(CHAVE_MATRICULA_SESSAO, preferences.getString(CHAVE_MATRICULA_SESSAO,null));
+        dadosUsuario2.put(CHAVE_SENHA, preferences.getString(CHAVE_SENHA,null));
+
+        return dadosUsuario2;
 
     }
 

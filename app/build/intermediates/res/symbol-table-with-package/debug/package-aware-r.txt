@@ -813,7 +813,10 @@ drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_action_arrow_left
+drawable ic_action_attachment_2
 drawable ic_action_send
+drawable ic_cloud_upload
+drawable ic_file_upload
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_menu_camera
@@ -823,6 +826,7 @@ drawable ic_menu_send
 drawable ic_menu_share
 drawable ic_menu_slideshow
 drawable ic_search
+drawable logo_chat_projecao
 drawable logo_escola
 drawable navigation_empty_icon
 drawable notification_action_background
@@ -879,9 +883,12 @@ id barrier
 id beginning
 id blocking
 id botaoCadastrarId
+id botaoCadastrarManterId
 id botarValidarId
 id bottom
+id bt_documento
 id bt_enviar
+id bt_upload
 id buttonPanel
 id cadastrarId
 id cancel_action
@@ -901,6 +908,7 @@ id container
 id contentPanel
 id coordinator
 id cursoId
+id cursoManterId
 id custom
 id customPanel
 id dark
@@ -942,6 +950,7 @@ id image
 id imageView
 id imageView2
 id imageView3
+id imageView_manter
 id info
 id invisible
 id italic
@@ -961,6 +970,7 @@ id lv_conversas
 id ly_conversa
 id masked
 id matriculaMainId
+id matriculaMainManterId
 id media_actions
 id message
 id middle
@@ -975,6 +985,7 @@ id nav_slideshow
 id navigation_header_container
 id never
 id nomeId
+id nomeManterId
 id none
 id normal
 id notification_background
@@ -1014,6 +1025,7 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id senhaMainId
+id senhaMainManterId
 id shortcut
 id showCustom
 id showHome
@@ -1042,7 +1054,6 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
-id textView2
 id textView6
 id textView7
 id text_input_password_toggle
@@ -1061,6 +1072,9 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id tv_mensagem
+id tv_subtitulo
+id tv_titulo
 id uniform
 id up
 id useLogo
@@ -1112,6 +1126,7 @@ layout abc_select_dialog_material
 layout activity_cadastro
 layout activity_conversa
 layout activity_main
+layout activity_manter_perfil
 layout activity_mensagens
 layout activity_validador
 layout design_bottom_navigation_item
@@ -1130,6 +1145,9 @@ layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout fragment_contatos
 layout fragment_conversas
+layout item_mensagem_direita
+layout item_mensagem_esquerda
+layout lista_conversas
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
@@ -1154,6 +1172,7 @@ layout tooltip
 menu activity_mensagens_drawer
 menu mensagens
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 string abc_action_bar_home_description
 string abc_action_bar_home_description_format

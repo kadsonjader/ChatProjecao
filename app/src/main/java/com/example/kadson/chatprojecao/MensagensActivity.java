@@ -59,6 +59,7 @@ public class MensagensActivity extends AppCompatActivity {
             case R.id.item_pesquisa:
                 return true;
             case R.id.action_settings:
+                startActivity(new Intent(MensagensActivity.this, ManterPerfil.class));
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

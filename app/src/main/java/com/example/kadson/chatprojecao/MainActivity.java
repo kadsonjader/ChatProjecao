@@ -51,19 +51,22 @@ public class MainActivity extends Activity {
             logar.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    Preferencias preferencias = new Preferencias(MainActivity.this);
                     final String matriculaLogar = matricula.getText().toString();
                     final String senhaLogar = senha.getText().toString();
+                    preferencias.salvarMatriculaUsuario(matriculaLogar);
                     DatabaseReference camposFilhos = perfil.child("Perfil " + matriculaLogar);
 
                     camposFilhos.addValueEventListener(new ValueEventListener() {
                         @Override
                         public void onDataChange(DataSnapshot dataSnapshot) {
-                            MensagensActivity mensagensActivity = new MensagensActivity();
                             String senhaUsuario = dataSnapshot.child("Senha").getValue().toString();
                             String nomeUsuario = dataSnapshot.child("Nome").getValue().toString();
                             if (senhaLogar.equals(senhaUsuario)) {
                                 Toast.makeText(MainActivity.this, "Credenciais Corretas", Toast.LENGTH_SHORT).show();
-                                Toast.makeText(MainActivity.this, "Bem Vindo " + nomeUsuario, Toast.LENGTH_LONG).show();
+                                Toast.makeText(MainActivity.this, "Bem Vindo " + nomeUsuario, Toast.LENGTH_SHORT).show();
+                                Preferencias preferencias = new Preferencias(MainActivity.this);
+                                preferencias.salvarNomeUsuario(nomeUsuario,senhaUsuario);
                                 startActivity(new Intent(MainActivity.this, MensagensActivity.class));
                             } else {
                                 Toast.makeText(MainActivity.this, "Credenciais Incorretas", Toast.LENGTH_LONG).show();
