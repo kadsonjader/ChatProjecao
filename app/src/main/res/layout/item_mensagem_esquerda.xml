@@ -8,6 +8,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mensagem.."
+        android:clickable="true"
+        android:autoLink="web"
         android:textColor="@android:color/black"
         android:background="@android:color/white"
         android:padding="8dp"

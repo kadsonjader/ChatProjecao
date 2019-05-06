@@ -16,7 +16,6 @@
         android:layout_height="wrap_content"
         android:padding="8dp"
         android:focusable="true"
-        android:clickable="true"
         android:longClickable="true"
         android:linksClickable="true"
         android:layout_below="@+id/tb_conversa"

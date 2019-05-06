@@ -90,6 +90,7 @@ public class ConversaActivity extends AppCompatActivity {
                 mensagens
         );*/
         listView.setAdapter(adapter);
+        listView.setSelection(listView.getCount() - 1);
 
         firebase = ConfiguracaoFirebase.getFirebase()
                 .child("Mensagens")
