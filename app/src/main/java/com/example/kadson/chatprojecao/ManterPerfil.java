@@ -97,21 +97,25 @@ public class ManterPerfil extends AppCompatActivity {
                 matriculaString = usuario.get("matriculaSessao");
                 senhaString = usuario.get("senha");
 
+
                 final String nomeString2 = nomeManter.getText().toString();
                 String matriculaString2 = matriculaManter.getText().toString();
                 String senhaString2 = senhaManter.getText().toString();
                 cursoUsuarioString = cursoManter.getSelectedItem().toString();
 
-                if(nomeString2.equals(nomeString) && matriculaString2.equals(matriculaString) && senhaString2.equals(senhaString2)){
+                if(matriculaString2.equals(matriculaString) && senhaString2.equals(senhaString)){
                     Toast.makeText(ManterPerfil.this, "Seus Dados continuam os mesmos!", Toast.LENGTH_LONG).show();
+                    System.out.println(matriculaString);
+                    System.out.println(senhaString);
                 }else {
                     referenciaFirebase = ConfiguracaoFirebase.getFirebase();
                     DatabaseReference perfil = referenciaFirebase.child("Perfis");
                     referenciaFirebase.child("Perfis").child("Perfil " + matriculaString).child("Matricula").setValue(matriculaString2);
                     referenciaFirebase.child("Perfis").child("Perfil " + matriculaString).child("Senha").setValue(senhaString2);
                     referenciaFirebase.child("Perfis").child("Perfil " + matriculaString).child("Curso").setValue(cursoUsuarioString);
-                    Toast.makeText(ManterPerfil.this, "Dados atualizados com sucesso!", Toast.LENGTH_LONG).show();
-                    startActivity(new Intent(ManterPerfil.this, ConversaActivity.class));
+                    Toast.makeText(ManterPerfil.this, "Dados atualizados com sucesso!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ManterPerfil.this, "Faça o login novamente para validação!", Toast.LENGTH_LONG).show();
+                    startActivity(new Intent(ManterPerfil.this, MainActivity.class));
 
                     //referenciaFirebase.child("Mensagens").child(nomeString).setValue(nomeString2);
                     //referenciaFirebase.child("Conversas").child(nomeString).setValue(nomeString2);

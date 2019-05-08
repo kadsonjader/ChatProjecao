@@ -193,7 +193,7 @@ public class ConversaActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(mSelectUrl != null){
                 Toast.makeText(ConversaActivity.this, "Aguarde o link do documento ser gerado", Toast.LENGTH_SHORT).show();
-                final StorageReference ref = FirebaseStorage.getInstance().getReference("docs/" + filename);
+                final StorageReference ref = FirebaseStorage.getInstance().getReference("docs/" +nomeUsuarioRementente+"_"+nomeUsuarioDestinatario);
                 ref.putFile(mSelectUrl).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
                     public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
