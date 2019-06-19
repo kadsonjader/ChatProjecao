@@ -13,7 +13,7 @@
         android:layout_marginTop="480dp"
         android:layout_marginLeft="150dp"
         android:layout_below="@+id/telefoneId"
-        android:text="Cadastrar" />
+        android:text="Atualizar" />
 
     <ImageView
         android:id="@+id/imageView_manter"

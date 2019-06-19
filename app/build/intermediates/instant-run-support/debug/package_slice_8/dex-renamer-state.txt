@@ -1,4 +1,0 @@
-#Mon Feb 25 23:28:01 BRT 2019
-base.0=/home/kadson/AndroidStudioProjects/chatProjecao/app/build/intermediates/transforms/dexMerger/debug/8
-path.0=classes.dex
-renamed.0=classes.dex

@@ -43,7 +43,7 @@ public class ContatosFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_contatos, container, false);
         listView =  view.findViewById(R.id.lv_contatos);
 
-        perfil.addValueEventListener(new ValueEventListener() {
+        perfil.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 ArrayList<String> coordenadores = new ArrayList<>();

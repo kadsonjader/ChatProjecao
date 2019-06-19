@@ -20,6 +20,7 @@ public class Preferencias {
     private final String CHAVE_NOME_SESSAO = "nomeSessao";
     private final String CHAVE_MATRICULA = "matricula";
     private final String CHAVE_MATRICULA_SESSAO = "matriculaSessao";
+    private final String CHAVE_SENHA_SESSAO = "senhaSessao";
     private final String CHAVE_SENHA = "senha";
     private final String CHAVE_CURSO = "curso";
     private final String CHAVE_TELEFONE = "telefone";
@@ -57,7 +58,7 @@ public class Preferencias {
 
     public void salvarNomeUsuario(String nome, String senha){
         editor.putString(CHAVE_NOME_SESSAO, nome);
-        editor.putString(CHAVE_SENHA, senha);
+        editor.putString(CHAVE_SENHA_SESSAO, senha);
         editor.commit();
     }
 

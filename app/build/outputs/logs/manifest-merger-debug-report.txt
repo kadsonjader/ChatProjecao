@@ -156,7 +156,7 @@ MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/kadsonjader/.gradle/cac
 	android:theme
 		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:14:9-65
 activity#com.example.kadson.chatprojecao.ManterPerfil
-ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:15:9-59
+ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:15:9-49
 	android:name
 		ADDED from /home/kadsonjader/AndroidStudioProjects/chatProjecao/app/src/main/AndroidManifest.xml:15:19-47
 activity#com.example.kadson.chatprojecao.ConversaActivity

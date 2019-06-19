@@ -95,7 +95,7 @@ public class ManterPerfil extends AppCompatActivity {
                 HashMap<String, String> usuario = preferencias.getDadosUsuario2();
                 nomeString = usuario.get("nomeSessao");
                 matriculaString = usuario.get("matriculaSessao");
-                senhaString = usuario.get("senha");
+                senhaString = usuario.get("senhaSessao");
 
 
                 final String nomeString2 = nomeManter.getText().toString();

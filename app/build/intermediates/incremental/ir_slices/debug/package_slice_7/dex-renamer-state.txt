@@ -1,4 +1,4 @@
-#Tue May 07 08:54:06 BRT 2019
+#Tue Jun 18 18:14:26 BRT 2019
 base.0=/home/kadsonjader/AndroidStudioProjects/chatProjecao/app/build/intermediates/transforms/dexMerger/debug/7
 path.0=classes.dex
 renamed.0=classes.dex

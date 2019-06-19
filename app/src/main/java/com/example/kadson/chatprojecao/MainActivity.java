@@ -35,7 +35,6 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        FirebaseApp.initializeApp(MainActivity.this);
         referenciaFirebase = ConfiguracaoFirebase.getFirebase();
         final DatabaseReference perfil = FirebaseDatabase.getInstance().getReference("Perfis");
         autenticacao = ConfiguracaoFirebase.getFirebaseAutenticacao();
@@ -51,13 +50,13 @@ public class MainActivity extends Activity {
             logar.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    onStop();
                     Preferencias preferencias = new Preferencias(MainActivity.this);
                     final String matriculaLogar = matricula.getText().toString();
                     final String senhaLogar = senha.getText().toString();
                     preferencias.salvarMatriculaUsuario(matriculaLogar);
                     DatabaseReference camposFilhos = perfil.child("Perfil " + matriculaLogar);
-
-                    camposFilhos.addValueEventListener(new ValueEventListener() {
+                    camposFilhos.addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(DataSnapshot dataSnapshot) {
                             String senhaUsuario = dataSnapshot.child("Senha").getValue().toString();
@@ -67,9 +66,12 @@ public class MainActivity extends Activity {
                                 Toast.makeText(MainActivity.this, "Bem Vindo " + nomeUsuario, Toast.LENGTH_SHORT).show();
                                 Preferencias preferencias = new Preferencias(MainActivity.this);
                                 preferencias.salvarNomeUsuario(nomeUsuario,senhaUsuario);
-                                startActivity(new Intent(MainActivity.this, MensagensActivity.class));
+                                Intent intent = new Intent(MainActivity.this, MensagensActivity.class).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                startActivity(intent);
                             } else {
                                 Toast.makeText(MainActivity.this, "Credenciais Incorretas", Toast.LENGTH_LONG).show();
+                                System.out.println(senhaUsuario);
+                                System.out.println(senhaLogar);
                             }
                         }
 
